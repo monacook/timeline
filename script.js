@@ -1,5 +1,4 @@
 let now = moment().format("L");
-    // document.getElementById("timeline").innerHTML = now + " is ";
 // console.log(now.format(now));
 
 const populateDefault = date => {   
@@ -17,11 +16,7 @@ const populateDefault = date => {
 populateDefault(now);
 console.log(now); // todays date
 
-// var end = moment().endOf('week');
-// console.log("end " + end);
-
 let end = now;
-// let end = document.getElementById('monthSelector').value + "/" + document.getElementById('daySelector').value + "/" + document.getElementById('yearInput').value;
 console.log(end);
 
 const differenceDate = () => {
