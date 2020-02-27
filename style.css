@@ -1,0 +1,12 @@
+body {
+    background-color: grey;
+}
+
+label {
+    color: black;
+}
+
+.row {
+    display: inline-block;
+    margin-right: 20px;
+}
