@@ -17,20 +17,21 @@ populateDefault(now);
 console.log(now); // todays date
 
 let end = now;
-console.log(end);
+console.log("end " + end); 
 
 const differenceDate = () => {
     let dateDiff = moment(end).diff(now, 'days');
     console.log(dateDiff);
-    document.getElementById("dateDifference").innerHTML = now + " is " + dateDiff + " days from now.";
+    document.getElementById("dateDifference").innerHTML = end + " is " + dateDiff + " days from now.";
 }
 
 differenceDate();
 
 const endDateListener = () => {
     end = document.getElementById('monthSelector').value + "/" + document.getElementById('daySelector').value + "/" + document.getElementById('yearInput').value;
-    console.log("Current end date is " + end);
+    // console.log("Current end date is " + end);
     differenceDate();
+
 }
 
 document.getElementById("monthSelector").addEventListener("change", endDateListener);
