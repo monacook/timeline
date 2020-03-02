@@ -1,12 +1,82 @@
 body {
-    background-color: grey;
+    background-color: lightskyblue;
 }
 
 label {
     color: black;
+    font-size: larger;
 }
 
-.row {
-    display: inline-block;
+ .row {
+    display: block;
     margin-right: 20px;
+    widows: 50%;
+    height: 50%;
+    align-items: center;
+
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Tangerine', serif;
+    font-size: 75px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+p {
+    text-align: center;
+    font-size: large;
+}
+
+.circle {
+    background: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    display: flexbox;
+    
+    
+}
+
+.circle:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    top: -116px;
+    left: 116px;
+}
+
+.circle:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    top: -204px;
+    left: -64px;
+}
+.circle:nth-child(4) {
+    width: 100px;
+    height: 100px;
+    top: -100px;
+    left: 116px;
+    float:right;
+}
+
+.circle:nth-child(5) {
+    width: 100px;
+    height: 100px;
+    top: -200px;
+    left: -64px;
+    
+}
+.circle:nth-child(6) {
+    width: 100px;
+    height: 100px;
+    top: -200px;
+    left: -64px;
+
+}
+
+.cloud {
+    display: inline-block;
+    margin: 0px 150px 150px;
+    
 }
